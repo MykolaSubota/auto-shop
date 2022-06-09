@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8#@52lr+99ehysp0y7)02mb#f(#iq42r(k8va#c_vgm3fghjyc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -138,3 +138,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')

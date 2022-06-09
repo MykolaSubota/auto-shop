@@ -2,6 +2,7 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 from cars.models import Auto
 from django.contrib.auth import get_user_model
+from cars.models import Part
 
 
 class CustomUser(AbstractUser):
@@ -20,6 +21,7 @@ class Order(models.Model):
     email = models.EmailField('Електронна пошта')
     phone = models.CharField('Номер телефону', max_length=15)
     auto = models.OneToOneField(Auto, models.PROTECT, verbose_name='Автмобіль')
+    parts = models.ManyToManyField(Part, 'Частини')
     manager = models.OneToOneField(get_user_model(), on_delete=models.PROTECT, verbose_name='Менеджер')
     note = models.TextField('Примітка', null=True, blank=True)
 

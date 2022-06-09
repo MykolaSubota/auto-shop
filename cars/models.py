@@ -23,6 +23,7 @@ class Part(models.Model):
 class Auto(models.Model):
     name = models.CharField('Назва', max_length=100)
     parts = models.ManyToManyField(Part, verbose_name='Частини')
+    image = models.ImageField(upload_to='images', blank=True)
 
     def __str__(self):
         return self.name
