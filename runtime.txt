@@ -1,2 +1,2 @@
 python-3.10.4
-web: gunicorn autoshop.wsgi --log-file -
+web: gunicorn cryptic-shore-27598.wsgi --log-file -
