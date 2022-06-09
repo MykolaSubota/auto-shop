@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-05 13:03+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+msgid "Hold down “Control”, or “Command” on a Mac, to select more than one."
+msgstr "Утримуйте «Control» або «Command» на Mac, щоб вибрати більше одного."
+
+msgid "Start typing to filter…"
+msgstr "Почніть вводити, щоб відфільтрувати…"
+
+msgid "This object doesn’t have a change history. It probably wasn’t added via this admin site."
+msgstr "Цей об’єкт не має історії змін. Ймовірно, він не був доданий через панель адміністрування."
+
+msgid "The {name} “{obj}” was changed successfully. You may edit it again below."
+msgstr "Об’єкт {name} “{obj}” було успішно змінено. Ви можете відредагувати його ще раз нижче."
+
+msgid "The {name} “{obj}” was added successfully."
+msgstr "Об’єкт {name} “{obj}” було успішно додано."
+
+msgid ""
+"The {name} “{obj}” was added successfully. You may add another {name} below."
+msgstr "Об’єкт {name} “{obj}” було успішно додано. Ви можете додати ще один {name} нижче."
+
+msgid "Deleted “%(object)s.”"
+msgstr "Видалено “%(object).”"
+
+msgid "Added {name} “{object}”."
+msgstr "Додано {name} “{object}”."
+
+msgid "Changed {fields} for {name} “{object}”."
+msgstr "Змінено {fields} для {name} “{object}”."
+
+msgid "username"
+msgstr "логін"
+
+msgid "Deleted {name} “{object}”."
+msgstr "Видалено {name} “{object}”."
+
+msgid "The {name} “{obj}” was added successfully. You may edit it again below."
+msgstr "Об’єкт {name} “{obj}” було успішно додано. Ви можете відредагувати його ще раз нижче."
+
+msgid ""
+"The {name} “{obj}” was changed successfully. You may add another {name} "
+"below."
+msgstr "Об’єкт {name} “{obj}” було успішно змінено. Ви можете додати інший {name} нижче."
+
+msgid "The {name} “{obj}” was changed successfully."
+msgstr "Об’єкт {name} “{obj}” було успішно змінено."
+
+msgid "The %(name)s “%(obj)s” was deleted successfully."
+msgstr "Об’єкти {name} “{obj}” було успішно видалено"
+
+msgid "%(name)s with ID “%(key)s” doesn’t exist. Perhaps it was deleted?"
+msgstr "%(name) з ID “%(key)” не існує. Можливо, його було видалено?"
+
+msgid "Home"
+msgstr "Головна"
+
+msgid ""
+"There’s been an error. It’s been reported to the site administrators via "
+"email and should be fixed shortly. Thanks for your patience."
+msgstr ""
+"Сталася помилка. Адміністратори сайту повідомили про неї через "
+"електронна пошта, і незабаром це буде виправлено. Дякуємо за ваше терпіння."
+
+msgid "You don’t have permission to view or edit anything."
+msgstr "Ви не маєте дозволу переглядати чи редагувати що-небудь."
+
+msgid ""
+"First, enter a username and password. Then, you’ll be able to edit more user "
+"options."
+msgstr ""
+"Спочатку введіть логін та пароль. Потім ви зможете редагувати інші параметри користувача."
+
+msgid "Enter a username and password."
+msgstr "Введіть логін і пароль."
+
+msgid "Forgotten your password or username?"
+msgstr "Забули пароль або логін?"
+
+msgid "Toggle navigation"
+msgstr "Переключити навігацію"
+
+msgid "Filter navigation items"
+msgstr "Фільтрувати елементи навігації"
+
+msgid "Thanks for spending some quality time with the web site today."
+msgstr "Дякуємо за те, що сьогодні провели час на сайті."
+
+msgid ""
+"Please enter your old password, for security’s sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+"Будь ласка, введіть свій старий пароль з міркувань безпеки, а потім двічі введіть новий пароль, щоб ми могли "
+"перевірити, що ви ввели його правильно."
+
+msgid ""
+"We’ve emailed you instructions for setting your password, if an account "
+"exists with the email you entered. You should receive them shortly."
+msgstr ""
+"Ми надіслали вам інструкції щодо встановлення пароля, якщо за введеною вами електронною поштою існує обліковий запис. "
+"Ви отримаєте їх найближчим часом."
+
+msgid ""
+"If you don’t receive an email, please make sure you’ve entered the address "
+"you registered with, and check your spam folder."
+msgstr "Якщо ви не отримали електронного листа, переконайтеся, що ви ввели адресу, на яку ви зареєструвалися, і "
+"перевірте папку зі спамом."
+
+msgid "Your username, in case you’ve forgotten:"
+msgstr "Ваш логін, якщо ви забули:"
+
+msgid ""
+"Forgotten your password? Enter your email address below, and we’ll email "
+"instructions for setting a new one."
+msgstr "Забули свій пароль? Введіть свою електронну адресу нижче, і ми надішлемо електронною поштою інструкції щодо "
+"налаштування нового."
+
+msgid "Reset my password"
+msgstr "Скинути мій пароль"
+
+
