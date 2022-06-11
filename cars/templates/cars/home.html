@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="ftco-section ftco-no-pt bg-light">
+    	<div class="container">
+    		<div class="row justify-content-center">
+          <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+          	<span class="subheading">Що ми пропонуємо</span>
+            <h2 class="mb-2">Рекомендовані авто</h2>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-12">
+    				<div class="carousel-car owl-carousel">
+                        {% for auto in object_list %}
+    					<div class="item">
+    						<div class="car-wrap rounded ftco-animate">
+		    					<div class="img rounded d-flex align-items-end" style="background-image: url({{ auto.image.url }});">
+		    					</div>
+		    					<div class="text">
+		    						<h2 class="mb-0"><a href="#">{{ auto.name}}</a></h2>
+		    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-secondary py-2 ml-1">Детальніше</a></p>
+		    					</div>
+		    				</div>
+    					</div>
+                        {% endfor %}
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <section class="ftco-section testimony-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+          	<span class="subheading">Відгуки</span>
+            <h2 class="mb-3">Щасливі клієнти</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item">
+                <div class="testimony-wrap rounded text-center py-4 pb-5">
+                  <div class="user-img mb-2" style="background-image: url({% static 'images/person_1.jpg' %})">
+                  </div>
+                  <div class="text pt-4">
+                    <p class="mb-4">Не помилився замовивши авто в AUTO SHOP. Професійно допомогли з вибором. Загалом вибором компанії більш ніж задоволений.</p>
+                    <p class="name">Сергій</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap rounded text-center py-4 pb-5">
+                  <div class="user-img mb-2" style="background-image: url({% static 'images/person_2.jpg' %})">
+                  </div>
+                  <div class="text pt-4">
+                    <p class="mb-4">Користувався послугами даної компанії. Купував через цю компанію автомобіль. По термінах і прорахунках нарікань немає, все як було заявлено.</p>
+                    <p class="name">Андрій</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap rounded text-center py-4 pb-5">
+                  <div class="user-img mb-2" style="background-image: url({% static 'images/person_3.jpg' %})">
+                  </div>
+                  <div class="text pt-4">
+                    <p class="mb-4">Звернувся до них за рекомендацією моїх друзів. Сподобався підхід компанії до роботи з клієнтом, все було прораховано, скільки чекати авто, приблизна вартість.</p>
+                    <p class="name">Василь</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap rounded text-center py-4 pb-5">
+                  <div class="user-img mb-2" style="background-image: url({% static 'images/person_5.png' %})">
+                  </div>
+                  <div class="text pt-4">
+                    <p class="mb-4">Дуже вдячний компанії за послуги. Все доступно розповіли, пояснили, прислухалися до моїх побажань і терпляче підібрали машинку.</p>
+                    <p class="name">Юрій</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ftco-counter ftco-section img bg-light" id="section-counter">
+			<div class="overlay"></div>
+    	<div class="container">
+    		<div class="row">
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="15">0</strong>
+                <span>Років<br>досвіду</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="1090">0</strong>
+                <span>Всього <br>Авто</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text text-border d-flex align-items-center">
+                <strong class="number" data-number="2590">0</strong>
+                <span>Щасливих <br>клієнтів</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text d-flex align-items-center">
+                <strong class="number" data-number="30">0</strong>
+                <span>Всього <br>філій</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    	</div>
+    </section>
+{% endblock %}
