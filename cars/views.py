@@ -14,3 +14,8 @@ class AutosListMixin(ListView):
 
 class AutoHomeListView(AutosListMixin):
     template_name = 'cars/home.html'
+
+
+class AutoListView(AutosListMixin):
+    template_name = 'cars/cars.html'
+    paginate_by = 12
