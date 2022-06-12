@@ -37,6 +37,5 @@ class OrderForm(ModelForm):
 
 class OrderCreateView(CreateView):
     template_name = 'cars/car.html'
-    # model = Order
     success_url = reverse_lazy('cars:home')
     form_class = OrderForm

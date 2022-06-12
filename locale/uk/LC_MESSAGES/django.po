@@ -138,4 +138,7 @@ msgstr "Забули свій пароль? Введіть свою електр
 msgid "Reset my password"
 msgstr "Скинути мій пароль"
 
+msgid "Authentication and Authorization"
+msgstr "Групи"
+
 
