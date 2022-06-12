@@ -32,8 +32,8 @@
                                          style="background-image: url({{ auto.image.url }});">
                                     </div>
                                     <div class="text">
-                                        <h2 class="mb-0"><a href="#">{{ auto.name }}</a></h2>
-                                        <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-secondary py-2 ml-1">Детальніше</a>
+                                        <h2 class="mb-0"><a href="{% url 'cars:car_detail' auto.id %}">{{ auto.name }}</a></h2>
+                                        <p class="d-flex mb-0 d-block"><a href="{% url 'cars:car_detail' auto.id %}" class="btn btn-secondary py-2 ml-1">Детальніше</a>
                                         </p></div>
                                 </div>
                             </div>

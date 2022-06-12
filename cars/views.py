@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 
 from cars.models import Auto
 
@@ -19,3 +19,8 @@ class AutoHomeListView(AutosListMixin):
 class AutoListView(AutosListMixin):
     template_name = 'cars/cars.html'
     paginate_by = 12
+
+
+class AutoDetailView(DetailView):
+    template_name = 'cars/car.html'
+    model = Auto
