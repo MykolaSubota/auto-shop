@@ -40,7 +40,7 @@
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item {% if request.resolver_match.url_name == "home" %}active{% endif %}"><a href="{% url 'cars:home' %}" class="nav-link">Головна</a></li>
 	          <li class="nav-item {% if request.resolver_match.url_name == "car_list" %}active{% endif %}"><a href="{% url 'cars:car_list' %}" class="nav-link">Автомобілі</a></li>
-	          <li class="nav-item {% if request.resolver_match.url_name == "contact" %}active{% endif %}"><a href="{% url 'contact' %}" class="nav-link">Контакти</a></li>
+	          <li class="nav-item {% if request.resolver_match.url_name == "contact" %}active{% endif %}"><a href="{% url 'customauth:contact' %}" class="nav-link">Контакти</a></li>
 {#	          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>#}
 {#	          <li class="nav-item"><a href="car.html" class="nav-link">Cars</a></li>#}
 {#	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>#}

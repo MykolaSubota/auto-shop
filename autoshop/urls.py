@@ -27,9 +27,10 @@ urlpatterns = [
     path('__debug__/', include('debug_toolbar.urls')),
     # path('', base_template),
     path('', include('cars.urls', namespace='cars')),
-    path('contact/',
-         TemplateView.as_view(template_name='contact.html'),
-         name='contact')
+    path('cotact/', include('customauth.urls', namespace='customauth'))
+    # path('contact/',
+    #      TemplateView.as_view(template_name='contact.html'),
+    #      name='contact')
 ]
 
 if settings.DEBUG:

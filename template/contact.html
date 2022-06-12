@@ -46,18 +46,19 @@
 		        </div>
           </div>
           <div class="col-md-8 block-9 mb-md-5">
-            <form action="#" class="bg-light p-5 contact-form">
+            <form action="" class="bg-light p-5 contact-form" method="post">
+                {% csrf_token %}
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Ім'я">
+                <input name="name" type="text" class="form-control" placeholder="Ім'я">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Електронна пошта">
+                <input name="email" type="text" class="form-control" placeholder="Електронна пошта">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Тема">
+                <input name="subject" type="text" class="form-control" placeholder="Тема">
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Повідомлення"></textarea>
+                <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Повідомлення"></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" value="Надіслати" class="btn btn-primary py-3 px-5">
