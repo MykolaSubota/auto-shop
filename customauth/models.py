@@ -19,9 +19,9 @@ class Order(models.Model):
     first_name = models.CharField("Ім'я", max_length=80)
     email = models.EmailField('Електронна пошта')
     phone = models.CharField('Номер телефону', max_length=15)
-    auto = models.OneToOneField(Auto, models.PROTECT, verbose_name='Автмобіль')
-    complete_set = models.OneToOneField(CompleteSet, on_delete=models.PROTECT, verbose_name='Комплектація', null=True, blank=True)
-    manager = models.OneToOneField(get_user_model(), on_delete=models.PROTECT, verbose_name='Менеджер')
+    auto = models.ForeignKey(Auto, models.PROTECT, verbose_name='Автмобіль')
+    complete_set = models.ForeignKey(CompleteSet, on_delete=models.PROTECT, verbose_name='Комплектація', null=True, blank=True)
+    manager = models.ForeignKey(get_user_model(), on_delete=models.PROTECT, verbose_name='Менеджер', null=True, blank=True)
     note = models.TextField('Примітка', null=True, blank=True)
     status = models.BooleanField('В обробці', default=False)
 

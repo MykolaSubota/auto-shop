@@ -1,7 +1,7 @@
 from django.urls import path
 from django.views.generic import TemplateView
 
-from cars.views import AutoHomeListView, AutoListView, AutoDetailView
+from cars.views import AutoHomeListView, AutoListView, AutoDetailView, OrderCreateView
 
 app_name = 'cars'
 
@@ -12,10 +12,10 @@ urlpatterns = [
     path('list/',
          AutoListView.as_view(),
          name='car_list'),
-    # path('car/',
-    #      TemplateView.as_view(template_name='cars/car.html'),
-    #      name='car_detail')
     path('car/<int:pk>/',
          AutoDetailView.as_view(),
          name='car_detail'),
+    path('order/create/',
+         OrderCreateView.as_view(),
+         name='order')
 ]

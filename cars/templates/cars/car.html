@@ -25,28 +25,30 @@
                     </div>
                 </div>
                 <div class="col-md-8 block-9 mb-md-5">
-                    <form action="#" class="bg-light p-5 contact-form">
+                    <form action="{% url 'cars:order' %}" class="bg-light p-5 contact-form" method="post">
+                    {% csrf_token %}
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Прізвище">
+                            <input name="last_name" type="text" class="form-control" placeholder="Прізвище">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Ім'я">
+                            <input name="first_name" type="text" class="form-control" placeholder="Ім'я">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Електронна пошта">
+                            <input name="email" type="text" class="form-control" placeholder="Електронна пошта">
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" placeholder="Номер телефону">
+                            <input name="phone" type="tel" class="form-control" placeholder="Номер телефону">
                         </div>
+                            <input name="auto" type="hidden" value="{{ auto.id }}" type="text" class="form-control" placeholder="Автомобіль">
                         <div class="form-group">
-                        <select class="form-control" aria-label="Комплектація">
+                        <select name="complete_set" class="form-control" aria-label="Комплектація">
                             {% for complect in auto.complete_sets.all %}
-                            <option value="{{ complect }}">{{ complect }}</option>
+                            <option value="{{ complect.id }}">{{ complect }}</option>
                             {% endfor %}
                         </select>
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="7" class="form-control"
+                            <textarea name="note" cols="30" rows="7" class="form-control"
                                       placeholder="Примітка"></textarea>
                         </div>
                         <div class="form-group">

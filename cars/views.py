@@ -1,7 +1,10 @@
+from django.forms import ModelForm
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView
+from django.urls import reverse_lazy
+from django.views.generic import ListView, DetailView, CreateView
 
 from cars.models import Auto
+from customauth.models import Order
 
 
 def base_template(request):
@@ -24,3 +27,16 @@ class AutoListView(AutosListMixin):
 class AutoDetailView(DetailView):
     template_name = 'cars/car.html'
     model = Auto
+
+
+class OrderForm(ModelForm):
+    class Meta:
+        model = Order
+        fields = ('last_name', 'first_name', 'email', 'phone', 'auto', 'complete_set', 'note')
+
+
+class OrderCreateView(CreateView):
+    template_name = 'cars/car.html'
+    # model = Order
+    success_url = reverse_lazy('cars:home')
+    form_class = OrderForm
